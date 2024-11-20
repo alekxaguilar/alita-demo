@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad26f98c-a975-45f6-bc17-502f1df278e8" name="Changes" comment="Add testng file">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/epam/auto/test/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +48,15 @@
     "Maven.alita-demo-web [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TestNG.LoginTests (1).executor": "Run",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.testLoginWithInvalidUsername.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/alejandro_aguilar/Documents/01-Development/workspace_alita/alita-demo-web/src/main/java/com/epam/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3523459"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,17 +70,28 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests">
+  <component name="RunManager" selected="TestNG.LoginTests (1)">
+    <configuration name="LoginTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="alita-demo-web" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="alita-demo-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.epam.auto.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.auto.test.LoginTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -86,12 +103,12 @@
       <module name="alita-demo-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.epam.auto.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.auto.test.LoginTests" />
       <option name="METHOD_NAME" value="testLoginWithInvalidUsername" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -102,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests (1)" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.testLoginWithInvalidUsername" />
         <item itemvalue="TestNG.LoginTests" />
@@ -134,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732062705871</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add testng file">
+      <option name="closed" value="true" />
+      <created>1732062915203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732062915203</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

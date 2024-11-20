@@ -3,10 +3,7 @@ package com.epam.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
-
-    private final WebDriver driver;
-
+public class LoginPage extends BasePage{
     // Locators
     private final By usernameField = By.id("user-name");
     private final By passwordField = By.id("password");

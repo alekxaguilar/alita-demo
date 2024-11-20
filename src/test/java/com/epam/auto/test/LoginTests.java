@@ -1,4 +1,3 @@
-package tests;
 
 import com.epam.pages.HomePage;
 import com.epam.pages.LoginPage;
@@ -34,14 +33,11 @@ public class LoginTests {
     }
 
     @Test
-    public void testValidLogin() throws InterruptedException {
+    public void testValidLogin()  {
         driver.get(config.getProperty("base.url"));
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
         loginPage.clickLogin();
-        synchronized (driver) {
-            driver.wait(3000); // Wait for 100ms
-        }
         Assert.assertTrue(homePage.isInventoryDisplayed(), "Inventory page is not displayed!");
     }
 

@@ -5,7 +5,7 @@
     <test name="Selenium Tests">
         <classes>
             <!-- Specify the fully qualified names of your test classes -->
-            <class name="tests.LoginTests" />
+            <class name="com.epam.auto.test.LoginTests" />
         </classes>
     </test>
 
