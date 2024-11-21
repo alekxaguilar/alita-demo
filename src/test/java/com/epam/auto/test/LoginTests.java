@@ -41,6 +41,24 @@ public class LoginTests {
         Assert.assertTrue(homePage.isInventoryDisplayed(), "Inventory page is not displayed!");
     }
 
+    @Test
+    public void testInvalidLoginWithWrongPassword() {
+        driver.get(config.getProperty("base.url"));
+        loginPage.enterUsername("standard_user");
+        loginPage.enterPassword("wrong_password");
+        loginPage.clickLogin();
+        Assert.assertEquals(loginPage.getErrorMessage(), "Username and password do not match any user in this service", "Error message is not correct!");
+    }
+
+    @Test
+    public void testInvalidLoginWithInvalidUsername() {
+        driver.get(config.getProperty("base.url"));
+        loginPage.enterUsername("invalid_user");
+        loginPage.enterPassword("secret_sauce");
+        loginPage.clickLogin();
+        Assert.assertEquals(loginPage.getErrorMessage(), "Username and password do not match any user in this service", "Error message is not correct!");
+    }
+
     @AfterTest
     public void tearDown() {
         if (driver != null) {
